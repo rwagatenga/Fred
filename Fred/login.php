@@ -15,7 +15,7 @@ if ($query) {
 			$_SESSION['logged_id']=$data['id'];
 		}
 		$_SESSION['logged']=1;
-		echo json_encode('Successfully Login');
+		echo json_encode('Ok');
 	}
 	else {
 		echo json_encode('Invalid E-mail or Password');
