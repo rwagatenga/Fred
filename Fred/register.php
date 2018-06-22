@@ -15,7 +15,7 @@ if ($check == 1) {
 	echo json_encode('E-mail already exist');
 }
 else{
-	$slq = "INSERT INTO `users` SET id = '', name = '$name', email = '$email', password = '$password'";
+	$sql = "INSERT INTO `users` SET id = '', name = '$name', email = '$email', password = '$password'";
 	$query = mysqli_query($conn, $sql);
 	if ($query = 1) {
 		echo json_encode('User Registered Successfully');
